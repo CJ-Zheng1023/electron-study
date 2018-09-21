@@ -11,6 +11,7 @@ function createGreetingWindow(){
         greetingWin = null
     })
     require('./main-process/menu')
+    require('./main-process/msg-a')
 }
 app.on('window-all-close', () => {
     if(process.platform != 'darwin'){

@@ -1,4 +1,4 @@
-const ipcRender = require('electron').ipcRenderer
+const ipcRenderer = require('electron').ipcRenderer
 document.addEventListener('contextmenu', () => {
-    ipcRender.send('show-context-menu')
+    ipcRenderer.send('show-context-menu')
 })
